@@ -4,12 +4,13 @@ import { Router } from '@angular/router';
 import { BehaviorSubject, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { User } from '../shared/user.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  API_KEY: string = 'AIzaSyARNsQs85Fg-HG_MxrFJHka4Fv0ubDoTYk';
+  API_KEY: string = environment.firebaseAPIkey;
   signUp_URL: string = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${this.API_KEY}`;
   signIn_URL: string = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${this.API_KEY}`;
 
