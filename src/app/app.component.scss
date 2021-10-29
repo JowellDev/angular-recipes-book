@@ -1,0 +1,16 @@
+.app-content {
+  min-height: 548px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* You can add global styles to this file, and also import other style files */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  height: 4px;
+  width: 0%;
+  background-color: #ff167b;
+  animation-name: changeColor;
+  z-index: 1000;
+}

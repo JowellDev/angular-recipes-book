@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(71, 71, 204);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  h4 {
+    text-align: center;
+  }
+}
